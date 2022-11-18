@@ -5,10 +5,10 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 
-import com.mgrimm21.gefinal.Animation;
-import com.mgrimm21.gefinal.GameObject;
-import com.mgrimm21.gefinal.Keyboard;
-import com.mgrimm21.gefinal.SpriteSheet;
+import com.mgrimm21.gefinal.gfx.Animation;
+import com.mgrimm21.gefinal.gfx.SpriteSheet;
+import com.mgrimm21.gefinal.io.Keyboard;
+import com.mgrimm21.gefinal.objects.GameObject;
 
 public class Player extends GameObject{
 	

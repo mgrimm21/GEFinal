@@ -1,6 +1,8 @@
-package com.mgrimm21.gefinal;
+package com.mgrimm21.gefinal.objects;
 
 import java.awt.Graphics;
+
+import com.mgrimm21.gefinal.gfx.Sprite;
 
 public class SpriteObject extends GameObject{
 

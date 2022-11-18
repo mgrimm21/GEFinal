@@ -1,4 +1,4 @@
-package com.mgrimm21.gefinal;
+package com.mgrimm21.gefinal.scene;
 
 import java.awt.Graphics;
 

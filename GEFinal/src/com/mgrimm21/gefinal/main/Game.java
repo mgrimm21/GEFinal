@@ -1,9 +1,13 @@
-package com.mgrimm21.gefinal;
+package com.mgrimm21.gefinal.main;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.util.ArrayList;
+
+import com.mgrimm21.gefinal.logic.LoopListener;
+import com.mgrimm21.gefinal.scene.Scene;
+import com.mgrimm21.gefinal.scene.SceneManager;
 
 public class Game implements Runnable{
 	

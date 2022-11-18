@@ -1,7 +1,9 @@
-package com.mgrimm21.gefinal;
+package com.mgrimm21.gefinal.scene;
 
 import java.awt.Graphics;
 import java.util.ArrayList;
+
+import com.mgrimm21.gefinal.objects.GameObject;
 
 public class Scene {
 

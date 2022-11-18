@@ -1,4 +1,4 @@
-package com.mgrimm21.gefinal;
+package com.mgrimm21.gefinal.io;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

@@ -1,10 +1,13 @@
-package com.mgrimm21.gefinal;
+package com.mgrimm21.gefinal.main;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.image.BufferStrategy;
 
 import javax.swing.JFrame;
+
+import com.mgrimm21.gefinal.io.Keyboard;
+import com.mgrimm21.gefinal.io.Mouse;
 
 public class Window {
 

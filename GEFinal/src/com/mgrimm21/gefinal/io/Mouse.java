@@ -1,4 +1,4 @@
-package com.mgrimm21.gefinal;
+package com.mgrimm21.gefinal.io;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

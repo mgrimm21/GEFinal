@@ -2,12 +2,13 @@ package com.mgrimm21.test;
 
 import java.awt.event.KeyEvent;
 
-import com.mgrimm21.gefinal.Game;
-import com.mgrimm21.gefinal.Keyboard;
-import com.mgrimm21.gefinal.Scene;
-import com.mgrimm21.gefinal.Sprite;
-import com.mgrimm21.gefinal.SpriteObject;
-import com.mgrimm21.gefinal.SpriteSheet;
+import com.mgrimm21.gefinal.gfx.Sprite;
+import com.mgrimm21.gefinal.gfx.SpriteSheet;
+import com.mgrimm21.gefinal.io.Keyboard;
+import com.mgrimm21.gefinal.main.Game;
+import com.mgrimm21.gefinal.objects.LogicObject;
+import com.mgrimm21.gefinal.objects.SpriteObject;
+import com.mgrimm21.gefinal.scene.Scene;
 
 public class Test {
 	
@@ -29,7 +30,6 @@ public class Test {
 		scene.add(player);
 		scene.add(o);
 		game.setScene(scene);
-		SpriteSheet playerSheet = new SpriteSheet("player.png", 32, 16);
 		
 	}
 	
