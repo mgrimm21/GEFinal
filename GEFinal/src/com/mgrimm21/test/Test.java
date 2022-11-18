@@ -7,6 +7,7 @@ import com.mgrimm21.gefinal.Keyboard;
 import com.mgrimm21.gefinal.Scene;
 import com.mgrimm21.gefinal.Sprite;
 import com.mgrimm21.gefinal.SpriteObject;
+import com.mgrimm21.gefinal.SpriteSheet;
 
 public class Test {
 	
@@ -18,16 +19,22 @@ public class Test {
 			@Override
 			public void tick() {
 				super.tick();
-				if (Keyboard.isKeyDownOnce(KeyEvent.VK_G)) System.out.println("G");
+				if (Keyboard.isKeyDownOnce(KeyEvent.VK_G)) {
+					x+=4;
+					System.out.println("G");
+				}
 			}
 		};
+		Player player = new Player(85, 85);
+		scene.add(player);
 		scene.add(o);
 		game.setScene(scene);
+		SpriteSheet playerSheet = new SpriteSheet("player.png", 32, 16);
+		
 	}
 	
 	public static void main(String[] args) {
 		new Test();
-		//test commit
 	}
 	
 }
