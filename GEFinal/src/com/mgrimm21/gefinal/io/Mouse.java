@@ -4,34 +4,37 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Mouse implements MouseListener{
+	
+	public static int mouseX = 0, mouseY = 0;
+	
+	private static boolean[] buttons = new boolean[35];
+	
+	public static boolean isDown(int button) {
+		return buttons[button];
+	}
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
+	public void mousePressed(MouseEvent e) {	
+		buttons[e.getButton()] = true;
 	}
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
+		buttons[e.getButton()] = false;
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-		// TODO Auto-generated method stub
 		
 	}
 

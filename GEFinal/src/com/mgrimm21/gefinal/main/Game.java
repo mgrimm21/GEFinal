@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.util.ArrayList;
 
+import com.mgrimm21.gefinal.io.Mouse;
 import com.mgrimm21.gefinal.logic.LoopListener;
 import com.mgrimm21.gefinal.scene.Scene;
 import com.mgrimm21.gefinal.scene.SceneManager;
@@ -26,6 +27,13 @@ public class Game implements Runnable{
 	}
 	
 	private void tick() {
+		try {
+			Mouse.mouseX = window.canvas.getMousePosition().x;
+			Mouse.mouseY = window.canvas.getMousePosition().y;
+		}catch(Exception e) {
+			
+		}
+		
 		sceneManager.tick();
 		for (LoopListener l: loopListeners) l.tick();
 	}

@@ -8,6 +8,7 @@ public class Animation {
 	private int currentFrame = 0;
 	private boolean  loop = true;
 	
+	//TODO: Fix animation to be less manual API Wise
 	public Animation(BufferedImage ... frames) {
 		this.frames = frames;
 	}

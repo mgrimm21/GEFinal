@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class EventDispatcher {
 	
-	@SuppressWarnings("rawtypes")
 	private static ArrayList<Object> classes = new ArrayList<Object>();
 	
 	@SuppressWarnings("rawtypes")
@@ -27,7 +26,6 @@ public class EventDispatcher {
 		}
 	}
 	
-	@SuppressWarnings("rawtypes")
 	public static void registerListener(Object o) {
 		classes.add(o);
 	}

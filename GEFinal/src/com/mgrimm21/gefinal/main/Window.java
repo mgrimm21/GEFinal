@@ -13,7 +13,7 @@ public class Window {
 
 	private Dimension size;
 	private JFrame frame;
-	private Canvas canvas;
+	protected Canvas canvas;
 	protected BufferStrategy bs;
 	
 	public Window(String name, int width, int height) {
